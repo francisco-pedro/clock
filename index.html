@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cronômetro</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./favicon.ico">
+    <!-- link font-awesome css -->
+    <link rel="stylesheet" href="assets/css/font-awesome.css">
+    <!-- link style css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <section class="section__cronometro section">
+        <article class="cronometro">
+            <div class="container">
+                <header class="l-header times">
+                    <div class="clock-img">
+                        <img src="./assets/img/clock.png" alt="clock">
+                    </div>
+                    <h1 class="header-title">Clock</h1>
+                </header>
+                <div class="content" data-content="c-content" id="div-content">
+
+                    <div class="expandir" data-expandir="exp"><i></i></div>
+
+                    <div class="times time">
+                        <div class="min" data-min="time-min">00:00:00</div>
+                    </div>
+
+                    <div class="controls">
+                        <div class="mb-r">
+                            <button type="button" class="btn__description play bg-play" data-play="time-play" data-description="Iniciar">
+                                <i class="bignner fa fa-play"></i>
+                            </button>
+                        </div>
+                        <div class="mb-r">
+                            <button type="button" class="btn__stop  undo color-stop bg-undo" data-stop="stop" data-description="parar">
+                                <i class="stop fa fa-stop"></i>
+                            </button>
+                        </div>
+                        <button type="button" class=" undo bg-undo btn__reset" data-undo="time-undo" data-description="Zerar">
+                            <i class="reset fa fa-undo"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
